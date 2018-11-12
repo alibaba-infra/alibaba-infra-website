@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+@import '../../reset.scss';
+
+.news-page {
+  .news-section {
+    max-width: $contentWidth;
+    margin: 0 auto;
+    padding: 80px 40px 40px;
+    .news-item {
+      margin: 0 20px 40px;
+    }
+  }
+  @media screen and (max-width: $mobileWidth){
+    .news-section {
+      padding: 80px 0;
+      .news-item {
+        margin: 0 10px 40px;
+      }
+    }
+  }
+}

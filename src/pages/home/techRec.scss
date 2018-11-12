@@ -1,0 +1,88 @@
+@import '../../variables.scss';
+
+.tech-rec {
+  overflow: hidden;
+  .left-part {
+    float: left;
+    width: 412px;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 0 40px;
+    .topic {
+      font-size: 36px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .label {
+      font-size: 14px;
+      line-height: 20px;
+      color: #666;
+      font-weight: 700;
+      span {
+        padding-left: 18px;
+        position: relative;
+        &::before {
+          content: '';
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .author {
+      span::before{
+        background-image: url(https://img.alicdn.com/tfs/TB1KgJ2o4TpK1RjSZFMXXbG_VXa-36-36.png);
+      }
+    }
+    .date {
+      span::before {
+        background-image: url(https://img.alicdn.com/tfs/TB13ChPo6DpK1RjSZFrXXa78VXa-36-36.png);
+      }
+    }
+    .value {
+      font-size: 14px;
+      line-height: 20px;
+      color: #999;
+      margin-bottom: 20px;
+    }
+    .tag-area {
+      margin-bottom: 30px;
+      .tag {
+        box-sizing: border-box;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 20px;
+        line-height: 18px;
+        margin-right: 10px;
+        padding: 0 8px;
+        border: 1px solid #999;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .right-part {
+    float: right;
+    font-size: 0;
+  }
+  @media screen and (max-width: 1200px) {
+    .left-part {
+      text-align: left;
+      float: none;
+      margin: 0 auto 80px;
+    }
+    .right-part {
+      float: none;
+      .tech-item-large {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

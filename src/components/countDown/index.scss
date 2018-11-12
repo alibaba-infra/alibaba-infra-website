@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.count-down-container {
+  .count-item {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(97, 114, 145, 0.20);
+    &:nth-child(2) {
+      margin: 0 60px;
+    }
+    h3 {
+      font-size: 80px;
+      color: #3b3d4d;
+    }
+    span {
+      color: $brandColor;
+      font-size: 18px;
+    }
+  }
+}

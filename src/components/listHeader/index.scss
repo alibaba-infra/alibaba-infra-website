@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.list-header {
+  box-sizing: border-box;
+  // max-width: $contentWidth;
+  margin: 0 auto;
+  height: 200px;
+  line-height: 245px;
+  position: relative;
+  img {
+    width: 320px;
+    height: 96px;
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    z-index: 1;
+  }
+  .list-title {
+    padding-left: 54px;
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+  }
+  .more {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: 62px;
+    font-size: 14px;
+    color: #333;
+    width: 42px;
+    line-height: initial;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      right: 0;
+      width: 8px;
+      height: 8px;
+      border-right: 1px solid #333;
+      border-bottom: 1px solid #333;
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+@import '../../reset.scss';
+@import '../../markdown.scss';
+
+.documentation-page {
+  .activity-bar {
+    margin-top: $headerHeight;
+  }
+  .doc-content {
+    padding: 80px 20%;
+    margin: 0 auto;
+    max-width: 735px;
+  }
+}

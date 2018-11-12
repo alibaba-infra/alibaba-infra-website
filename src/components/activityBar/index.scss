@@ -1,0 +1,75 @@
+@import '../../variables.scss';
+
+.activity-bar {
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  & > div {
+    box-sizing: border-box;
+    max-width: $contentWidth;
+    margin: 0 auto;
+    height: 320px;
+    position: relative;
+    .activity-bar-container {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      .title {
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+        font-weight: 700;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+      .label {
+        font-size: 14px;
+        color: #fff;
+        padding-left: 20px;
+        position: relative;
+        &::before {
+          content: '';
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+      .item-value {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.8;
+      }
+      .amount {
+        display: inline-block;
+        margin: 0 40px 40px 0;
+        .label::before {
+          background-image: url(https://img.alicdn.com/tfs/TB1RmLhn7voK1RjSZFDXXXY3pXa-36-36.png);
+        }
+      }
+      .date {
+        display: inline-block;
+        margin: 0 40px 40px 0;
+        .label::before {
+          background-image: url(https://img.alicdn.com/tfs/TB1mJYdnYPpK1RjSZFFXXa5PpXa-36-36.png);
+        }
+      }
+      .address {
+        display: inline-block;
+        margin: 0 40px 40px 0;
+        .label::before {
+          background-image: url(https://img.alicdn.com/tfs/TB15UDBn3HqK1RjSZFPXXcwapXa-36-36.png);
+        }
+      }
+    }
+  }
+}
