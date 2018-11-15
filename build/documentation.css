@@ -151,7 +151,8 @@
 
 @media screen and (max-width: 900px) {
   .header-container .header-body .logo {
-    margin-left: 20px; }
+    margin-left: 20px;
+    height: 16px; }
   .header-container .header-body .slogan {
     display: none; }
   .header-container .header-body .language-switch {
@@ -275,7 +276,7 @@
       .button-normal:hover::after {
         border-color: #4654D5; }
 .activity-bar {
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
   .activity-bar > div {
@@ -312,7 +313,8 @@
           position: absolute;
           left: 0;
           top: 0;
-          background-size: 100%;
+          background-size: cover;
+          background-position: center center;
           background-repeat: no-repeat; }
       .activity-bar > div .activity-bar-container .item-value {
         font-size: 14px;
