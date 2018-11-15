@@ -3,11 +3,12 @@
 .tech-rec {
   overflow: hidden;
   .left-part {
-    float: left;
-    width: 412px;
+    display: inline-block;
+    max-width: 372px;
+    vertical-align: top;
     box-sizing: border-box;
     text-align: right;
-    padding: 0 40px;
+    padding-left: 40px;
     .topic {
       font-size: 36px;
       font-weight: 700;
@@ -29,7 +30,8 @@
           position: absolute;
           left: 0;
           top: 0;
-          background-size: 100%;
+          background-size: cover;
+          background-position: center center;
           background-repeat: no-repeat;
         }
       }
@@ -68,17 +70,17 @@
     }
   }
   .right-part {
-    float: right;
+    display: inline-block;
+    margin-left: 40px;
     font-size: 0;
   }
   @media screen and (max-width: 1200px) {
     .left-part {
       text-align: left;
-      float: none;
-      margin: 0 auto 80px;
+      margin: 0 auto 40px;
     }
     .right-part {
-      float: none;
+      margin-left: 0;
       .tech-item-large {
         display: block;
         margin: 0 auto;

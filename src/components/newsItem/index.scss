@@ -1,12 +1,15 @@
+@import '../../variables.scss';
 .news-item {
+  text-align: left;
   display: inline-block;
   width: 372px;
   height: 270px;
   a {
     display: block;
     position: relative;
+    font-size: 0;
     img {
-      width: 372px;
+      width: 100%;
       height: 210px;
     }
     p {
@@ -42,6 +45,16 @@
       color: #333;
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+  @media screen and (max-width: $mobileWidth) {
+    & {
+      margin: 0 0 40px;
+      width: 335px;
+      height: 249px;
+      img {
+        height: 189px;
       }
     }
   }
